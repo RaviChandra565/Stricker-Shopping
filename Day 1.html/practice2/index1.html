@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Portfolio</title>
+   <link rel="stylesheet" href="styles1.css">
+</head>
+
+
+<body>
+
+
+   <header>
+       <h1 id="name">Ravi Chandra</h1>
+       <p>Java Full Stack Developer</p>
+
+
+       <button onclick="changeTheme()">Change Theme</button>
+   </header>
+
+
+   <nav>
+       <a href="#about">About</a>
+       <a href="#skills">Skills</a>
+       <a href="#projects">Projects</a>
+       <a href="#contact">Contact</a>
+   </nav>
+
+
+   <section id="about">
+       <h2>About Me</h2>
+       <p>
+           I am passionate about Java Full Stack Development and love
+           building web applications.
+       </p>
+
+
+       <button onclick="showMessage()">Know More</button>
+   </section>
+
+
+   <section id="skills">
+       <h2>Skills</h2>
+
+
+       <div class="card">
+           <h3>Frontend</h3>
+           <p>HTML, CSS, JavaScript, React</p>
+       </div>
+
+
+       <div class="card">
+           <h3>Backend</h3>
+           <p>Java, Spring Boot, Hibernate</p>
+       </div>
+
+
+       <div class="card">
+           <h3>Database</h3>
+           <p>MySQL, MongoDB</p>
+       </div>
+   </section>
+
+
+   <section id="projects">
+       <h2>Projects</h2>
+
+
+       <div class="card">
+           <h3>Student Management System</h3>
+           <button onclick="projectInfo('Student Management System')">
+               View Details
+           </button>
+       </div>
+
+
+       <div class="card">
+           <h3>Online Book Store</h3>
+           <button onclick="projectInfo('Online Book Store')">
+               View Details
+           </button>
+       </div>
+   </section>
+
+
+   <section id="contact">
+       <h2>Contact</h2>
+
+
+       <form onsubmit="return validateForm()">
+           <input type="text" id="username" placeholder="Enter Name">
+           <br><br>
+
+
+           <input type="email" id="email" placeholder="Enter Email">
+           <br><br>
+
+
+           <button type="submit">Submit</button>
+       </form>
+   </section>
+
+
+   <footer>
+       <p>&copy; 2026 John Doe</p>
+   </footer>
+
+
+   <script src="script1.js"></script>
+
+
+</body>
+
+
+</html>

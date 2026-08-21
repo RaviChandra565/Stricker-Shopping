@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header, footer { background: #f0f0f0; padding: 10px; }
+        nav a { margin-right: 10px; }
+        section { margin-bottom: 20px; }
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+        aside { background: #fafafa; padding: 10px; border-left: 3px solid #ddd; }
+        mark { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Welcome to HTML Tags Demo</h1>
+        <nav>
+            <a href="#text">Text</a>
+            <a href="#lists">Lists</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+        </nav>
+    </header>
+    <!-- TEXT & FORMATTING -->
+    <section id="text">
+        <h2>Text & Formatting</h2>
+        <p>This is a <b>paragraph</b> with <i>italic</i>, <u>underlined</u>, and 
+        <mark>highlighted</mark> text.</p>
+        <p>Line break demo: Hello<br>World</p>
+        <hr>
+        <p>Heading examples:</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 3</h4>
+        <h5>Heading 3</h5>
+        <h6>Heading 3</h6>
+    </section>
+    <!-- LINKS & MEDIA -->
+    <section>
+        <h2>Links & Media</h2>
+        <p><a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a></p>
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+        <br><br>
+        <video width="500" controls>
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <br><br>
+        <audio controls>
+            <source src="sample.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+        <br><br>
+        <iframe width="300" height="200" src="https://www.example.com"></iframe>
+    </section>
+    <!-- LISTS -->
+    <section id="lists">
+        <h2>Lists</h2>
+        <p>Unordered List:</p>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+        <p>Ordered List:</p>
+        <ol>
+            <li>First Step</li>
+            <li>Second Step</li>
+        </ol>
+        <p>Definition List:</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+        </dl>
+    </section>
+    <!-- TABLE -->
+    <section id="tables">
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr><th>Name</th><th>Age</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Alice</td><td>22</td></tr>
+                <tr><td>Bob</td><td>25</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">End of Data</td></tr>
+            </tfoot>
+        </table>
+    </section>
+    <!-- FORMS -->
+    <section id="forms">
+        <h2>Forms & Input</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name"><br><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" rows="3"></textarea><br><br>
+            <label>Choose option:</label>
+            <select>
+                <option>Yes</option>
+                <option>No</option>
+            </select><br><br>
+            <label><input type="checkbox"> Subscribe</label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- ARTICLE & ASIDE -->
+    <article>
+        <h2>Article Example</h2>
+        <p>This is an independent article block that could be a blog post.</p>
+    </article>
+    <aside>
+        <p><strong>Tip:</strong> Learn semantic tags like <code>&lt;section&gt;</code>, 
+        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> for modern HTML5 structure.</p>
+    </aside>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 HTML Demo Page | Built with ❤️</p>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

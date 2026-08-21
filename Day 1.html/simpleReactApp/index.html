@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple React App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./libs/react.development.js"></script>
+    <script src="./libs/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+    const nestedElement = React.createElement("div", { id: "parent" }, [
+        React.createElement("div", { id: "child1" }, [
+          React.createElement(
+            "h1",
+            { style: { color: "blue" } },
+            "Hi, I'm Bob the Builder!"
+          ),
+          React.createElement("h2", {}, "I can fix it!"),
+        ]),
+        React.createElement("div", { id: "child2" }, [
+          React.createElement(
+            "h1",
+            { style: { color: "orange" } },
+            "Hi, I'm Dora the Explorer!"
+          ),
+          React.createElement("h2", {}, "Let's go exploring!"),
+        ]),
+      ]);
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(nestedElement);
+    </script>
+</body>
+</html>
