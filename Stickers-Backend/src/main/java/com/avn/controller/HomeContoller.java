@@ -39,6 +39,9 @@ public class HomeContoller {
 	    
 	    return "headers given :" + userAgent + " " + accept;
 	}
-	
+	@GetMapping("/")
+	public String home() {
+	    return "Stickers Backend is Live!";
+	}
 
 }
