@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.function.ServerRequest.Headers;
 
 
 
 @RestController
 @RequestMapping("api/v1/dummy")
+
 public class HomeContoller {
 	@GetMapping("/first")
 	public void displayInfo(@RequestParam("clgName") String name) {
@@ -33,9 +33,11 @@ public class HomeContoller {
 		return "Path variable given" + "is"+m.get("source")+"and"+m.get("destination");
 	}
 	@GetMapping({"/second123"})
-	public String DisplayHeaders
-	(@RequestHeader HttpHeaders headers) {
-		return "headers given :"+headers.get("user-Agent")+" "+Headers.get("Accept");
+	public String DisplayHeaders(
+	        @RequestHeader(value = "User-Agent", defaultValue = "") String userAgent,
+	        @RequestHeader(value = "Accept", defaultValue = "") String accept) {
+	    
+	    return "headers given :" + userAgent + " " + accept;
 	}
 	
 
