@@ -1,0 +1,23 @@
+# Eclipse metadata and settings
+.metadata/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Maven build output
+target/
+*.class
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Environment and secret files
+.env
+*.properties.local
+
+# OS generated files
+.DS_Store
+Thumbs.db
